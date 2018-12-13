@@ -1,0 +1,20 @@
+<section id="vinos">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 borde" *ngFor="let vino of vinos">
+        <div routerLink="/vino/{{vino.id}}" class="card_vino">
+          <div routerLink="/vino/{{vino.id}}" class="card-body text-center" >
+            <p>
+              <img routerLink="/vino/{{vino.id}}" src="{{vino.imagen}}" class="redonda" alt="Imagen de {{vino.nombre}}"/>
+            </p>
+            <h4 routerLink="/vino/{{vino.id}}" class="card-nombre">{{vino.nombre}}</h4>
+            <p routerLink="/vino/{{vino.id}}" class="card-nombre">{{vino.marca}}</p>
+            <p routerLink="/vino/{{vino.id}}" class="card-descripcion">
+              {{vino.descripcion}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

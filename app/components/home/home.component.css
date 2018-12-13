@@ -1,0 +1,46 @@
+#vinos {
+  border-radius: 0.25rem;
+  background: #f9f9f9 !important;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+#vinos .card {
+  border: none;
+  background: #fff;
+}
+
+.card_vino {
+  position: relative;
+  /* -webkit-transform: rotateY(0deg); */
+  z-index: 2;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+}
+
+.card_vino .card {
+  min-height: 312px;
+}
+
+p.card-descripcion,
+h4.card-nombre {
+  min-height: 96px !important;
+}
+
+.card-nombre {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.redonda {
+  height: 180px;
+  border-radius: 50% !important;
+}
+
+.borde {
+  border: solid 0.5rem white;
+}

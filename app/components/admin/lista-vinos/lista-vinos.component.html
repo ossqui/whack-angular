@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col">
+      <button class="btn btn-primary float-right mb-3 mt-4" data-toggle="modal" data-target="#modalVino">Nuevo vino</button>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Precio</th>
+          <th scope="col">&nbsp;</th>
+          <th scope="col">&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vino of vinos; index as i">
+          <th scope="row">{{i+1}}</th>
+          <td>{{vino.nombre}}</td>
+          <td>{{vino.marca}}</td>
+          <td>{{vino.precio}}€</td>
+          <td><button class="btn btn-primary"  data-toggle="modal" data-target="#modalVino" (click)="onPreUpdateVino(vino)">Actualizar</button></td>
+          <td><button class="btn btn-danger" (click)="onDeleteVino(vino.id)" >Eliminar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<app-modal></app-modal>
